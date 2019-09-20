@@ -2,4 +2,7 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Willkommen zu #{title}! Bitte geben Sie den Hinweis ein:
+  form(method='GET' action="/hint")
+    input(type='text', placeholder='Hinweis' name='hint')
+    button.btn.btn-primary(type='submit') Senden
