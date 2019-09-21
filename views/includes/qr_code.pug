@@ -1,0 +1,6 @@
+block append head
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js', integrity='sha384-Dr98ddmUw2QkdCarNQ+OL7xLty7cSxgR0T7v1tq4UErS/qLV0132sBYTolRAFuOV', crossorigin='anonymous')
+    script(src="/scripts/qr-code.js")
+
+block gen_qr_code
+    canvas(id='qr-code')
