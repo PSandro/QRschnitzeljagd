@@ -3,6 +3,6 @@ extends layout
 block content
   h1= title
   p Willkommen zu #{title}! Bitte geben Sie den Hinweis ein:
-  form(method='GET' action="/hint")
-    input(type='text', placeholder='Hinweis' name='hint')
+  form(method='POST' action="/hint")
+    input(type='text', autofocus="autofocus", placeholder='Hinweis' name='hint')
     button.btn.btn-primary(type='submit') Senden
