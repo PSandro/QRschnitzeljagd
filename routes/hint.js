@@ -10,8 +10,6 @@ let hints = new Map(
 
 /* Shows pieces of information to a given hint. */
 router.post('/', (req, res) => {
-  console.log(req);
-
   res.render('hint', { title: 'Hinweis', hint: hints.get(req.body.hint) || "Dieser Hinweis existiert nicht" });
 });
 
