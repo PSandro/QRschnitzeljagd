@@ -2,11 +2,17 @@
     "hints": [
         {
             "hint": "Hund",
-            "content": "Ein Hund ist da um einen zu mögen."
+            "content": {
+              "text":"Ein Hund ist da um einen zu mögen.",
+              "audio": "dummy.mp3"
+            }
         },
         {
             "hint": "Katze",
-            "content": "Eine Katze ist da um gemocht zu werden."
+            "content": {
+              "text":"Eine Katze ist da um gemocht zu werden.",
+              "audio": "dummy.mp3"
+            }
         }
     ]
 }

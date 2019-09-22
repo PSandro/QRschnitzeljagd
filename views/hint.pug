@@ -2,5 +2,9 @@ extends layout
 
 block content
   h1= title
-  p #{hint}
+  p #{hint.text}
   include includes/qr_code.pug
+  if hint.audio
+    br
+    audio(controls='', autoplay='')
+      source(src=`/audio/${hint.audio}` type='audio/mpeg')
